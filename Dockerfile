@@ -1,7 +1,7 @@
 FROM node:lts
 RUN apt-get update \
     && apt-get install -y wget --no-install-recommends \
-    && apt-get install -y chromium fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst fonts-freefont-ttf \
+    && apt-get install -y libgbm-dev chromium fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst fonts-freefont-ttf \
     && rm -rf /var/lib/apt/lists/*
 
 RUN groupadd -r pptruser \
