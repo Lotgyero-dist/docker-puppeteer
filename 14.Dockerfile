@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:14
 ARG USER_ID=999
 ARG GROUP_ID=999
 ENV USER_ID=${USER_ID} \
